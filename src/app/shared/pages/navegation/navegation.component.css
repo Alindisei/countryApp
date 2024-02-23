@@ -1,0 +1,43 @@
+.mat-toolbar {
+  background-color: rgb(111, 167, 184);
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  z-index: 2;
+  border-collapse: collapse;
+  
+}
+
+.mat-sidenav-container {
+  position: fixed;
+  top: 0px;
+  right:0%;
+  bottom:0%;
+  left:0%; 
+}
+
+h1 {
+  justify-content: space-around;
+  font-family: sans-serif,serif;
+}
+
+.mat-sidenav {
+  background-color: rgba(111, 167, 184, 0.74);
+  width: max-content;
+  top: 54px;
+}
+
+.mat-nav-list{
+  justify-items: center;
+}
+
+.mat-sidenav-content{
+top:61px;
+background-color: #dfe8f0;
+
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+

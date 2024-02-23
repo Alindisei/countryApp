@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row">
+  <div class="col">
+    <input type="text" 
+      class="form-control mb-3" 
+      placeholder="Search by capital" 
+      (input)="onSearchInput($event)" 
+      [value]="initialValue">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <countries-table [countries]="countries"
+    (countryClicked)="navigateToCountry($event)" style="cursor: pointer;">
+    </countries-table>
+  </div>
+</div>
+
+</div>

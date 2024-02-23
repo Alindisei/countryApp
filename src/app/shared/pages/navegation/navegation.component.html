@@ -1,0 +1,51 @@
+<!--crear rutas de manera dinamica-->
+  
+<mat-toolbar color="terciary">
+  <mat-icon style="cursor: pointer;"
+    routerLink='home'
+    routerLinkActive="active">
+    home
+  </mat-icon>
+  <span class="spacer"></span>
+</mat-toolbar>
+  
+  <mat-sidenav-container>    
+    <mat-sidenav #sidenav mode="side" opened>
+      <mat-nav-list>
+        <mat-list-item 
+          routerLink="country"
+          routerLinkActive="active"
+          class="list-group-item">Country
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item 
+          routerLink="capital"
+          routerLinkActive="active"
+          class="list-group-item">Capital
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item 
+          routerLink="region"
+          routerLinkActive="active"
+          class="list-group-item">Region
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item 
+          routerLink="language"
+          routerLinkActive="active"
+          class="list-group-item">Language
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item 
+          routerLink="maps"
+          routerLinkActive="active"
+          class="list-group-item">Map
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-nav-list>
+  </mat-sidenav>
+  <!--Content-->
+  <mat-sidenav-content class="sidenav-content">
+    <router-outlet/>
+  </mat-sidenav-content>
+</mat-sidenav-container>

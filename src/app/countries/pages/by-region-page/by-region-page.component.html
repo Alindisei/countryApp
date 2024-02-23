@@ -1,0 +1,26 @@
+<div class="fullscreen">
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col text-center">
+        <button *ngFor="let region of regions"
+            class="btn mx-2" 
+            [ngClass]="{ 'custom-button': selectedRegion === region }"
+            (click)="searchByRegion(region)">
+            {{ region }}
+          </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <hr>
+        <div class="table">
+        <countries-table [countries]="countries" 
+          style="cursor: pointer;">
+        </countries-table>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</div>
